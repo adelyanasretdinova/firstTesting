@@ -21,4 +21,10 @@ describe("a function to add 2 numbers", () => {
     // assert:check expectation
     expect(result).toEqual("parameter needs to be a number");
   });
+  it("doesnt add if first parameter is not a number", () => {
+    //act: call function with 2 values
+    let result = addNumbers(1, "a");
+    // assert:check expectation
+    expect(result).toEqual("parameter needs to be a number");
+  });
 });
